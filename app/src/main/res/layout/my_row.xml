@@ -27,8 +27,9 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.093"
-                tools:layout_editor_absoluteX="256dp" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/img"
+                app:layout_constraintVertical_bias="0.093" />
 
             <TextView
                 android:id="@+id/note_title_txt"
@@ -39,7 +40,8 @@
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintTop_toTopOf="@+id/img"
-                tools:layout_editor_absoluteX="74dp" />
+                app:layout_constraintStart_toEndOf="@+id/img"
+                app:layout_constraintEnd_toEndOf="parent" />
 
             <TextView
                 android:id="@+id/note_desc_txt"
